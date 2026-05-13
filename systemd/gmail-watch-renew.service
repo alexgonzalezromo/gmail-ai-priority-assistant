@@ -1,0 +1,10 @@
+[Unit]
+Description=Renew Gmail watch for Gmail AI Priority Assistant
+After=network.target
+
+[Service]
+Type=oneshot
+User=YOUR_APP_USER
+WorkingDirectory=/srv/gmail_push_importance_digest
+EnvironmentFile=/srv/gmail_push_importance_digest/.env
+ExecStart=/srv/gmail_push_importance_digest/.venv/bin/python manage.py renew-watch

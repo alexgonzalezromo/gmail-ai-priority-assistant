@@ -1,0 +1,17 @@
+user_name: "Portfolio User"
+primary_email: "owner@example.com"
+always_important_senders:
+  - "teamlead@example.com"
+ignored_senders:
+  - "noreply@example.com"
+important_domains:
+  - "example.com"
+important_keywords:
+  - "deadline"
+  - "factura"
+  - "contrato"
+ignored_keywords:
+  - "newsletter"
+  - "promo"
+  - "unsubscribe"
+tone: "normal"

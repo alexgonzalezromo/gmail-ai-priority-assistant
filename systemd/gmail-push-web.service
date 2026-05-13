@@ -1,0 +1,17 @@
+[Unit]
+Description=Gmail AI Priority Assistant API
+After=network.target
+
+[Service]
+Type=simple
+User=YOUR_APP_USER
+WorkingDirectory=/srv/gmail_push_importance_digest
+EnvironmentFile=/srv/gmail_push_importance_digest/.env
+ExecStart=/srv/gmail_push_importance_digest/.venv/bin/uvicorn gmail_push_importance_digest.app:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

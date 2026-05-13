@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gmail-ai-priority-assistant"
+version = "0.2.0"
+description = "Asistente event-driven para Gmail que clasifica prioridad y saca a la superficie solo los correos que de verdad importan."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.30.0",
+  "google-api-python-client>=2.151.0",
+  "google-auth-oauthlib>=1.2.1",
+  "google-auth-httplib2>=0.2.0",
+  "google-cloud-pubsub>=2.27.0",
+  "openai>=1.54.0",
+  "PyYAML>=6.0.2",
+  "python-dotenv>=1.0.1",
+  "beautifulsoup4>=4.12.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/alexgonzalezromo/gmail-ai-priority-assistant"
+Repository = "https://github.com/alexgonzalezromo/gmail-ai-priority-assistant"
+
+[tool.setuptools.packages.find]
+include = ["gmail_push_importance_digest*"]
