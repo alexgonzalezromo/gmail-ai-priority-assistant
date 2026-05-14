@@ -1,6 +1,6 @@
 # Gmail AI Priority Assistant
 
-Este proyecto es un servicio pequeño y event-driven que vigila una bandeja de Gmail, recupera solo los mensajes nuevos, estima su importancia con OpenAI y avisa únicamente cuando de verdad hay algo que merece atención.
+Este proyecto es un servicio pequeño y event-driven que vigila una bandeja de Gmail, recupera solo los mensajes nuevos, estima su importancia via LLM APi de OpenAI y avisa únicamente cuando de verdad hay algo que merece atención (threshold).
 
 La idea de fondo es bastante simple: la mayoría de herramientas de correo están pensadas para leer más emails; esta está pensada para decidir cuáles pueden esperar.
 
